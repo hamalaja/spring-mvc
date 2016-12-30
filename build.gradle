@@ -40,6 +40,11 @@ task copyCmd(type: Copy) {
     into "$buildDir/libs"
 }
 
+task copyProcfile(type: Copy) {
+    from "Procfile.txt"
+    into "$buildDir/libs"
+}
+
 task copyConfig(type: Copy) {
     from "configs"
     into "$buildDir/libs/configs"
@@ -51,7 +56,7 @@ task copyLibs(type: Copy){
 }
 
 //build đầy đủ
-task fatBuild(type: Copy, dependsOn: ["jar", "copySrc", "copyConfig", "copyCmd", "copyLibs"]) {
+task fatBuild(type: Copy, dependsOn: ["jar", "copySrc", "copyConfig", "copyCmd","copyProcfile", "copyLibs"]) {
 	description 'Build jar, copy web source, config and run bath file'
 }
 
