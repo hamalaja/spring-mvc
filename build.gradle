@@ -18,6 +18,15 @@ dependencies {
     compile 'org.eclipse.jetty:apache-jstl:9.3.7.RC1'
 }
 
+jar {
+  manifest {
+    attributes(
+      'Class-Path': configurations.compile.collect { it.getName() }.join(' '),
+      'Main-Class': 'vn.hamalaja.mvc.Application'
+    )
+  }
+}
+
 
 task copySrc(type: Copy){
     from "src"
