@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Hamalaja.com</title>
 </head>
 <body>
-	<h1>${title}</h1>
+	<h1>The app has been build based on Heroku ^^</h1>
 </body>
 </html>
