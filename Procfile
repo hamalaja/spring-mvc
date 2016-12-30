@@ -1,1 +1,1 @@
-web: java -cp "build/libs/spring-mvc.jar:build/libs/lib/*" -Dfile.encoding=UTF-8 vn.hamalaja.mvc.Application
+web: java -Dserver.port=26786 $JAVA_OPTS -cp "build/libs/spring-mvc.jar:build/libs/lib/*" -Dfile.encoding=UTF-8 vn.hamalaja.mvc.Application
