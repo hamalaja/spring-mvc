@@ -17,7 +17,7 @@ import vn.hamalaja.mvc.services.AuthenticationService;
 public class UserController {
 	@Autowired
 	private AuthenticationService authService;
-	
+
 	@Value("${foo}")
 	private int foo;
 
@@ -32,10 +32,8 @@ public class UserController {
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String index(Map<String, Object> model) {
-
 		model.put("title", "Vi du");
 		model.put("msg", "Mo ta");
-
 		return "login";
 	}
 
