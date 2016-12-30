@@ -1,1 +1,1 @@
-web: rackup -p $PORT
+web: java -cp "build/libs/spring-mvc.jar:build/libs/lib/*" -Dfile.encoding=UTF-8 vn.hamalaja.mvc.Application
