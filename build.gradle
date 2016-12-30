@@ -47,7 +47,7 @@ task copyConfig(type: Copy) {
 
 task copyLibs(type: Copy){
 	from configurations.runtime
-    into "$buildDir/libs"
+    into "$buildDir/libs/lib"
 }
 
 //build đầy đủ
