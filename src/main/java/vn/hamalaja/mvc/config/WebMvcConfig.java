@@ -31,6 +31,7 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter {
 		resolver.setPrefix("/WEB-INF/");
 		resolver.setSuffix(".jsp");
 
+		System.out.println("revewResolver");
 		// jsp sử dụng kết hợp jstl của javax
 		resolver.setViewClass(JstlView.class);
 		// ở đây có thể dùng các teamplate như Freemarker, Thymeleaf,
