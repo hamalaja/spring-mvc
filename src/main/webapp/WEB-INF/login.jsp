@@ -7,6 +7,6 @@
 <title>Hamalaja.com</title>
 </head>
 <body>
-	<h1>The app has been build based on Heroku ^^</h1>
+	<h1>Hello baby ^^</h1>
 </body>
 </html>
